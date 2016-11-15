@@ -1,0 +1,193 @@
+ <!-- Carousel Begin -->    
+    
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag("1.JPG") %>
+          <div class="carousel-caption">
+              <h3>Fast</h3>
+              <p>Pace unrivaled</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("2.JPG") %>
+          <div class="carousel-caption">
+              <h3>Efficient</h3>
+              <p>Optimum resource allocation</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("3.JPG") %>
+          <div class="carousel-caption">
+              <h3>Affordability</h3>
+              <p>Table top transactions</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-inverse zero-border-radius">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">BBJIS Services</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end nav -->
+    
+    <!--BEGIN STICKY NAV BAR-->
+    <script type="text/javascript">
+            $(document).ready(function () {
+
+            var menu = $('.navbar');
+            var origOffsetY = menu.offset().top;
+
+            function scroll() {
+                if ($(window).scrollTop() >= origOffsetY) {
+                    $('.navbar').addClass('sticky');
+                    $('.content').addClass('navbar-padding');
+                   
+                } else {
+                    $('.navbar').removeClass('sticky');
+                    $('.content').removeClass('navbar-padding');
+                }
+            }
+
+            document.onscroll = scroll;
+
+        });
+        
+    </script>
+    
+    <!-- CONTENT MAINS-->
+    
+<div class="container content">
+    
+    <div class="jumbotron">
+        <h1>SITE UNDER DEVELOPMENT</h1>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Some Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="col-sm-6">
+            <%= image_tag("4.jpg", :class => "image-dim") %>
+        </div>
+    </div>
+    <hr>
+    
+<!-- FADE IN EFFECT -->    
+    <script type="text/javascript">
+        $(document).ready(function() {
+                /* Every time the window is scrolled ... */
+                $(window).scroll( function(){
+
+                    /* Check the location of each desired element */
+                    $('.hideme').each( function(i){
+
+                        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                        /* If the object is completely visible in the window, fade it it */
+                        if( bottom_of_window > bottom_of_object ){
+
+                            $(this).animate({'opacity':'1'}, 1000);
+
+                        }
+
+                    }); 
+
+                });
+
+            });
+    </script>
+    <!-- End fade in content effect -->
+    
+<!-- THUMBNAILS-->    
+    
+    
+    <!-- TO BE EDITTED AND REVIEW OTHER THEME CONCEPTS NOV 8, 2016 -->
+    <div class="jumbotron distance hideme">
+        <div class="row">
+            <div class="col-md-4 center">
+                <div class="thumbnail">
+                    <%= image_tag("3.JPG") %>
+                    <div class="caption">
+                        <p>lorem epsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 center">
+               <div class="thumbnail">
+                    <%= image_tag("2.JPG") %>
+                   <div class="caption">
+                       <p>lorem epsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 center">
+               <div class="thumbnail">
+                    <%= image_tag("1.JPG") %>
+                   <div class="caption">
+                    <p>lorem epsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ </div>  
+    
+    
+    
+    
+<!-- FOOTER -->    
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Copyright 2016</p>
+        </div>
+        <div class="col-sm-4 center">
+            <p>Need a site like this? Contact me at clintvencor@gmail.com</p>
+        </div>
+        <div class="col-sm-4 center">
+            <p>Created by: Kristopher Clint P. Despi</p>
+        </div>
+    </div>
+ </div>
