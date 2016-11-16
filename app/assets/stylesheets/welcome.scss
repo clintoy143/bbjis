@@ -1,6 +1,8 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 .zero-border-radius {border-radius: 0px;}
 .distance {margin-top: 20px;}
 .image-dim{width: 100%; height: auto;}
@@ -11,7 +13,7 @@
 .sticky {
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     z-index: 10;
 }
 .navbar-padding{margin-top: 70px;}
