@@ -13,13 +13,15 @@
 .carousel-caption{top: 220px; bottom: auto;}
 .carousel-inner{max-height: 600px;}
 
-.scrolling-bg-effect{background-image: url("http://fh1k9e2mgp47mzv028skubvh.wpengine.netdna-cdn.com/screenr/wp-content/uploads/sites/25/2016/09/pexels-photo.jpg"); 
+.scrolling-bg-effect{background-image: url("5.jpg"); 
                     background-attachment: fixed;
+                    background-size: auto auto;
+                    background-repeat: no-repeat;
                     height: 300px;
                     }
 
 .services-margin{margin-top: 50px;}
 
-.contact-height{height: auto; background-color: #474545; padding-bottom: 10px;}
+.contact-height{height: auto; background-color: #474545; padding-bottom: 30px;}
 
 .contact-info{color: white;}

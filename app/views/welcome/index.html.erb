@@ -55,38 +55,14 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
           
         </ul>
       </div>
     </nav>
     <!-- end nav -->
     
-    <!--BEGIN STICKY NAV BAR-->
-    <script type="text/javascript">
-            $(document).ready(function () {
-
-            var menu = $('.navbar');
-            var origOffsetY = menu.offset().top;
-
-            function scroll() {
-                if ($(window).scrollTop() >= origOffsetY) {
-                    $('.navbar').addClass('sticky');
-                    $('.content').addClass('navbar-padding');
-                   
-                } else {
-                    $('.navbar').removeClass('sticky');
-                    $('.content').removeClass('navbar-padding');
-                }
-            }
-
-            document.onscroll = scroll;
-
-        });
-        
-    </script>
     
     <!-- CONTENT MAINS-->
     
@@ -113,40 +89,14 @@
             <%= image_tag("4.jpg", :class => "image-dim") %>
         </div>
     </div>
-    <hr>
+ <hr />
 </div>
-<!-- FADE IN EFFECT -->    
-    <script type="text/javascript">
-        $(document).ready(function() {
-                /* Every time the window is scrolled ... */
-                $(window).scroll( function(){
-
-                    /* Check the location of each desired element */
-                    $('.hideme').each( function(i){
-
-                        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                        var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                        /* If the object is completely visible in the window, fade it it */
-                        if( bottom_of_window > bottom_of_object ){
-
-                            $(this).animate({'opacity':'1'}, 1000);
-
-                        }
-
-                    }); 
-
-                });
-
-            });
-    </script>
-    <!-- End fade in content effect -->
 
     
 <!-- SERVICES -->
 <div class="container-fluid scrolling-bg-effect">
-    <div class="text-center services-margin">
-        <h2>Our Services</h2>
+    <div class="text-center services-margin" id="services">
+        <h2>Our Full Services</h2>
    
        <br />
        <br />
@@ -222,24 +172,12 @@
 <!-- end -->
 
 <!-- Begin contact -->
-<div class="container-fluid contact-height">
+<div class="container-fluid contact-height contact-info">
+   <div class="container" id="contact">
     <h2 class="text-center">Contact us</h2>
     <br/>
     <div class="row">
-        <div class="col-sm-5">
-            <h4>BBJIS ENGINEERING SERVICES</h4>
-            <p><span class="contact-info">
-              Zone Okra, Paknaan,Mandaue City 6014 ,Philippines <br>
-              Tel No. 6332- 420-0342 -Cel.No. 0943-0565642 / 0916-6024218<br>
-              Gmail Add : ecurb09.bbjis@gmail.com</span>
-            </p>
-        </div>
-        
-        <div class="col-sm-2">
-            <h3 class="text-center">Or</h3>
-        </div>
-        
-        <div class="col-sm-5">
+        <div class="col-md-6">
             <form action="https://formspree.io/your@email.com" method="POST">
                 <div class="form-group">   
                     <label>Name</label>
@@ -259,7 +197,18 @@
                     <input type="submit" value="Send" class="btn btn-primary">
             </form>
         </div>    
-    </div>        
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+            <h4>BBJIS ENGINEERING SERVICES</h4>
+            <p>
+              Zone Okra, Paknaan, Mandaue City 6014, Philippines <br>
+              Tel No. +6332 - 420-0342 - Cel.No. 0943-0565642 / 0916-6024218<br>
+              E-mail Add : ecurb09.bbjis@gmail.com
+            </p>
+        </div>
+    </div> 
+    </div>
 </div>    
    
     
@@ -272,11 +221,12 @@
         <div class="col-sm-4">
             <p>Copyright 2016</p>
         </div>
-        <div class="col-sm-4 center">
-            <p>Need a site like this? Contact me at clintvencor@gmail.com</p>
+        <div class="col-sm-4">
+            <p>Need a site like this? </p>
+            <p>Contact me at clintvencor@gmail.com</p>
         </div>
-        <div class="col-sm-4 center">
-            <p>Created by: Kristopher Clint P. Despi - Ruby on Rails Developer</p>
+        <div class="col-sm-4">
+            <p>Created by: Kristopher Clint P. Despi</p> <p>-Ruby on Rails Developer</p>
         </div>
     </div>
  </div>
