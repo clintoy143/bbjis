@@ -54,7 +54,7 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -90,13 +90,13 @@
     
     <!-- CONTENT MAINS-->
     
-<div class="container content">
+<div class="container">
     
-    <div class="bbjis">
+    <div class="bbjis" id="about">
      
     </div>
     <br>
-    <div class="row">
+    <div class="row content">
         <div class="col-sm-6">
             <h2>Who we are</h2>
             <p> BBJIS ENGINEERING SERVICES is a full service engineering & consulting firm that first 
@@ -109,7 +109,7 @@
             and well- disciplined work force, we strive to fulfill our commitments with good quality 
             works and timely delivery.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 content">
             <%= image_tag("4.jpg", :class => "image-dim") %>
         </div>
     </div>
@@ -220,7 +220,47 @@
     </div>
 </div>
 <!-- end -->
-    
+
+<!-- Begin contact -->
+<div class="container-fluid contact-height">
+    <h2 class="text-center">Contact us</h2>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4>BBJIS ENGINEERING SERVICES</h4>
+            <p><span class="contact-info">
+              Zone Okra, Paknaan,Mandaue City 6014 ,Philippines <br>
+              Tel No. 6332- 420-0342 -Cel.No. 0943-0565642 / 0916-6024218<br>
+              Gmail Add : ecurb09.bbjis@gmail.com</span>
+            </p>
+        </div>
+        
+        <div class="col-sm-2">
+            <h3 class="text-center">Or</h3>
+        </div>
+        
+        <div class="col-sm-5">
+            <form action="https://formspree.io/your@email.com" method="POST">
+                <div class="form-group">   
+                    <label>Name</label>
+                    <input type="text" name="name_sender" class="form-control">
+                </div>    
+                    
+                <div class="form-group"> 
+                    <label>Email</label>
+                    <input type="email" name="email_sender" class="form-control">
+                </div>    
+                    
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message_from_sender" class="form-control"></textarea>
+                </div>    
+                
+                    <input type="submit" value="Send" class="btn btn-primary">
+            </form>
+        </div>    
+    </div>        
+</div>    
    
     
     

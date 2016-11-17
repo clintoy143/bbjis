@@ -8,14 +8,18 @@
 .content{padding-top: 20px;}
 .footer{background-color: darkgrey;}
 .center{text-align: center;}
-.bbjis{background-image: url('bbjis_head.jpg'); height: 257px;}
+.bbjis{background-image: url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
 .hideme{opacity: 0;height: auto;}
 .carousel-caption{top: 220px; bottom: auto;}
 .carousel-inner{max-height: 600px;}
 
 .scrolling-bg-effect{background-image: url("http://fh1k9e2mgp47mzv028skubvh.wpengine.netdna-cdn.com/screenr/wp-content/uploads/sites/25/2016/09/pexels-photo.jpg"); 
                     background-attachment: fixed;
-                    height: 350px;
+                    height: 300px;
                     }
 
 .services-margin{margin-top: 50px;}
+
+.contact-height{height: auto; background-color: #474545; padding-bottom: 10px;}
+
+.contact-info{color: white;}
