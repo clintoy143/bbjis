@@ -9,10 +9,10 @@
 .content{padding-top: 20px;}
 .footer{background-color: darkgrey;}
 .center{text-align: center;}
-.bbjis{background-image: url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
+.bbjis{background-image: image-url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
 .carousel-inner{max-height: 610px;}
 .carousel-caption{top: 220px; bottom: auto;}
-.scrolling-bg-effect{background-image: url("5.jpg"); 
+.scrolling-bg-effect{background-image: image-url("5.jpg"); 
                     background-attachment: fixed;
                     background-size: auto auto;
                     background-repeat: no-repeat;
