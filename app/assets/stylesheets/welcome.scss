@@ -1,6 +1,8 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 .zero-border-radius {border-radius: 0px;}
 .distance {margin-top: 20px;}
 .image-dim{width: 100%; height: auto;}
@@ -9,18 +11,20 @@
 .footer{background-color: darkgrey;}
 .center{text-align: center;}
 .bbjis{background-image: url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
+<<<<<<< HEAD
 
 .carousel-caption{top: 220px; bottom: auto;}
 
+=======
+.carousel-inner{max-height: 610px;}
+.carousel-caption{top: 220px; bottom: auto;}
+>>>>>>> development
 .scrolling-bg-effect{background-image: url("5.jpg"); 
                     background-attachment: fixed;
                     background-size: auto auto;
                     background-repeat: no-repeat;
                     height: 300px;
                     }
-
 .services-margin{margin-top: 50px;}
-
 .contact-height{height: auto; background-color: #474545; padding-bottom: 30px;}
-
 .contact-info{color: white;}
