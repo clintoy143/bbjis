@@ -8,8 +8,9 @@
 .image-dim{width: 100%; height: auto;}
 .thumb-dim{width: 140px; height: 140px;}
 .content{padding-top: 20px;}
-.footer{background-color: darkgrey; margin-top: 30px;}
+.footer{background-color: darkgrey;}
 .center{text-align: center;}
+<<<<<<< HEAD
 .sticky {
     position: fixed;
     width: 100%;
@@ -17,6 +18,22 @@
     z-index: 10;
 }
 .navbar-padding{margin-top: 70px;}
+=======
+.bbjis{background-image: url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
+>>>>>>> development
 .hideme{opacity: 0;height: auto;}
 .carousel-caption{top: 220px; bottom: auto;}
 .carousel-inner{max-height: 600px;}
+
+.scrolling-bg-effect{background-image: url("5.jpg"); 
+                    background-attachment: fixed;
+                    background-size: auto auto;
+                    background-repeat: no-repeat;
+                    height: 300px;
+                    }
+
+.services-margin{margin-top: 50px;}
+
+.contact-height{height: auto; background-color: #474545; padding-bottom: 30px;}
+
+.contact-info{color: white;}
