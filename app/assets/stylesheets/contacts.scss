@@ -2,17 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.zero-border-radius {border-radius: 0px;}
+
 .distance {margin-top: 20px;}
+
 .image-dim{width: 100%; height: auto;}
-.thumb-dim{width: 140px; height: 140px;}
+
 .full{width: 100%; opacity: 0.8;}
+
 .content{padding-top: 20px;}
-.footer{background-color: darkgrey;}
+
+
+
 .center{text-align: center;}
 .bbjis{background-image: image-url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
-.carousel-inner{max-height: 610px;}
-.carousel-caption{top: 220px; bottom: auto;}
+
 .scrolling-bg-effect{background-image: image-url("5.jpg"); 
                     background-attachment: fixed;
                     background-size: 100% auto;
@@ -22,3 +25,12 @@
 .services-margin{margin-top: 50px;}
 .contact-height{height: auto; background-color: #474545; padding-bottom: 30px;}
 .contact-info{color: white;}
+
+//CAROUSEL SECTION
+.carousel-inner{max-height: 610px;}
+
+.carousel-caption{top: 220px; bottom: auto;}
+
+.carousel-caption>h2{font-size: 60px; font-family: 'Oswald', sans-serif;}
+
+.footer{background-color: darkgrey;}
