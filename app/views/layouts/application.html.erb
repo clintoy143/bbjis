@@ -52,8 +52,10 @@
               var scrollTop = $(window).scrollTop();
               var height = $(window).height();
               $('.fade-scroll').css({
-                  'opacity': ((height - scrollTop) / height)
+                  'opacity': (((height - scrollTop) / height) - 0.1)
               });
+             
+          
           });
       </script>
 
