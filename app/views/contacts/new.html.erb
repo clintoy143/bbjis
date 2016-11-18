@@ -30,7 +30,9 @@
                 <%= f.submit "Submit", class: "btn btn-primary" %>
                 
             <% end %>
+            
             <br />
+            
             <% flash.each do |key, value| %>
                 <%= content_tag :div, value, class: "alert alert-#{key}" %>
             <% end %>
