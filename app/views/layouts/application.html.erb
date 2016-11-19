@@ -21,11 +21,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">BBJIS </a>
+         <%= link_to "BBJIS", root_path, class: "navbar-brand" %>
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><%= link_to "Home", root_path %></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#service">Services</a></li>
@@ -88,18 +88,20 @@
       
       <script>
           $('a[href*="#"]:not([href="#"])').click(function() {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
-  }
-});
+               if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                   var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                      $('html, body').animate({
+                      scrollTop: target.offset().top
+                       }, 1000);
+                    return false;
+                        }
+               }
+        });
       </script>
+      
+      
 
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -117,7 +119,8 @@
     
     
     <!-- CONTENT MAINS-->
-    
+
+<!-- ABOUT -->    
 <div class="container-fluid">
   
     <div class="bbjis" id="about">
