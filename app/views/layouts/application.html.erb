@@ -10,6 +10,33 @@
   </head>
 
   <body>
+    <!-- Nav-bar -->
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <%= link_to "BBJIS", root_path, class: "navbar-brand" %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><%= link_to "Home", root_path %></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#service">Services</a></li>
+            </li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end nav -->    
+    
      <!-- Carousel Begin -->    
     
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -58,7 +85,23 @@
           
           });
       </script>
-
+      
+      <script>
+          $('a[href*="#"]:not([href="#"])').click(function() {
+               if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                   var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                      $('html, body').animate({
+                      scrollTop: target.offset().top
+                       }, 1000);
+                    return false;
+                        }
+               }
+        });
+      </script>
+      
+      
 
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -72,57 +115,86 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- Nav-bar -->
-    <nav class="navbar navbar-inverse zero-border-radius">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">BBJIS Services</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-    <!-- end nav -->
+
     
     
     <!-- CONTENT MAINS-->
-    
-<div class="container">
-    
+
+<!-- ABOUT -->    
+<div class="container-fluid">
+  
     <div class="bbjis" id="about">
-     
     </div>
-    <br>
-    <div class="row content">
-        <div class="col-sm-6">
-            <h2>Who we are</h2>
-            <p> BBJIS ENGINEERING SERVICES is a full service engineering & consulting firm that first 
-            opened its doors in 2015 June 08., located at Zone Okra,Paknaan, Mandaue City.
-            The company is a Construction & Engineering Company engaged in the design, supply, installation, 
-            testing and commissioning of mechanical & electrical system. The company also caters 
-            construction works, architectural and steel －fabrication. We have a team of well qualified 
-            and hands-on experienced engineers with many years of field experience to provide fast response 
-            and cost effective solutions to our customer’s needs. With the support from our dedicated, efficient 
-            and well- disciplined work force, we strive to fulfill our commitments with good quality 
-            works and timely delivery.</p>
-        </div>
-        <div class="col-sm-6 content">
-            <%= image_tag("4.jpg", :class => "image-dim") %>
-        </div>
-    </div>
+    <div class="row"> 
+      <h2 class="text-center d-bold">Who we are</h2>
+      
+      <p class="text-center ital d-bold">“ Our experience of working together has continued through <br/> a combined effort 
+      to provide our mutual Client <br/> with a first class service throughout .“</p>
+    </div>      
+    <br />      
+    <br />
+    <div class="container">
+       <div class="row">
+         
+         <div class="col-sm-6">
+           <table>
+             <tr>
+               <td><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
+               <td class="td-padding"><p>We have some of the most talented and technically advanced team 
+               members in the industry and our client see that. All team members are encouraged to ask questions, 
+               make recommendations and continuously improve system and techniques. </p></td>
+             </tr> 
+           </table>
+         </div>
+         <div class="col-sm-6">
+           <table>
+             <tr>
+               <td><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
+               <td class="td-padding"><p>A full service engineering & consulting firm that
+               first opened its doors in 2015 June 08., located at Zone Okra,Paknaan, 
+               Mandaue City. The company is a Construction & Engineering Company 
+               engaged in the design, supply, installation, testing and commissioning of 
+               mechanical & electrical system. </p></td>
+             </tr> 
+           </table> 
+         </div>
+         
+       </div>
+       <br />
+       <div class="row">
+         
+         <div class="col-sm-6">
+            <table>
+             <tr>
+               <td><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
+               <td class="td-padding"><p>Caters construction works, architectural and steel －fabrication.
+               We have a team of well qualified and hands-on experienced engineers with many years of field 
+               experience to provide fast response and cost effective solutions to our customer’s needs.</p></td>
+             </tr> 
+           </table> 
+         </div>
+         <div class="col-sm-6">
+            <table>
+             <tr>
+               <td><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
+               <td class="td-padding"><p>We generate positive relationships with 
+               our clients, staff and subcontractors by ensuring an enjoyable experience
+               is had by all throughout the course of our projects.  </p></td>
+             </tr> 
+           </table> 
+         </div>
+         
+       </div>   
+    </div>    
+</div>
  <hr />
 </div>
 
     
 <!-- SERVICES -->
-<div class="container-fluid scrolling-bg-effect">
+<div class="container-fluid scrolling-bg-effect" id="service">
     <div class="text-center services-margin" id="services">
-        <h2>Our Full Services</h2>
+        <h2 class="service-font" > Services Offered</h2>
    
        <br />
        <br />
