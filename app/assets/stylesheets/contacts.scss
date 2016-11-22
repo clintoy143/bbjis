@@ -14,7 +14,11 @@
 .service-font{font-family: 'Montserrat', sans-serif; }
 
 .center{text-align: center;}
-.bbjis{background-image: image-url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 320px;}
+
+.bbjis{background-image: image-url('bbjis_head.jpg'); 
+        background-size: 100% auto; 
+        background-repeat: no-repeat; 
+        height: 320px;}
 
 .scrolling-bg-effect{background-image: image-url("5.jpg"); 
                     background-attachment: fixed;
@@ -23,7 +27,9 @@
                     height: 300px;
                     }
 .services-margin{margin-top: 50px;}
+
 .contact-height{height: auto; background-color: #474545; padding-bottom: 30px;}
+
 .contact-info{color: white;}
 
 //CAROUSEL SECTION
@@ -49,3 +55,15 @@
 
 .d-bold{font-weight: bold;}
 
+//responsive
+
+@media screen and (max-width: 420px) {
+    .bbjis {
+        height: 100px;
+    }
+    
+    .carousel-caption>h2{
+        font-size: 40px; 
+        font-family: 'Oswald', sans-serif;}
+    
+}
