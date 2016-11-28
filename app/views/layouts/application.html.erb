@@ -74,19 +74,10 @@
 
       
 <!--TEST SCRIPT FOR DIV FADING BY SCROLL -->      
-      <script>
-          $(window).scroll(function () {
-              var scrollTop = $(window).scrollTop();
-              var height = $(window).height();
-              $('.fade-scroll').css({
-                  'opacity': (((height - scrollTop) / height) - 0.1)
-              });
-             
-          
-          });
-      </script>
+
       
       <script>
+    
           $('a[href*="#"]:not([href="#"])').click(function() {
                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                    var target = $(this.hash);
@@ -98,7 +89,19 @@
                     return false;
                         }
                }
-        });
+            });
+            
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop();
+                var height = $(window).height();
+                $('.fade-scroll').css({
+                    'opacity': (((height - scrollTop) / height) - 0.1)
+                });
+            });
+        
+
+
+          
       </script>
       
       
@@ -126,7 +129,7 @@
     <div class="bbjis" id="about">
     </div>
     <div class="row"> 
-      <h2 class="text-center d-bold">Who we are</h2>
+      <h2 class="text-center d-bold"><span class="">Who we are</span></h2>
       
       <p class="text-center ital d-bold">“ Our experience of working together has continued through <br/> a combined effort 
       to provide our mutual Client <br/> with a first class service throughout .“</p>
@@ -161,7 +164,7 @@
          
        </div>
        <br />
-       <div class="row">
+       <div class="row bot-pad">
          
          <div class="col-sm-6">
             <table>
@@ -187,14 +190,75 @@
        </div>   
     </div>    
 </div>
- <hr />
+
 </div>
+
+<div class="container-fluid sample">
+    <br/>
+    <div class="container">
+        
+        <h3 class="text-center service-font"><span class="enclose" id="testHover">Completed Projects</span></h3>
+        <br/>
+        <br/>
+        <div class="row bot-pad">
+            <p class="text-center service-font">CONSTRUCTION OF CONCRETE PAVEMENT LOCATED AT TISA, 
+            ELEMENTARY SCHOOL IN BRGY. TISA , LABANGON CEBU CITY<p>
+            <hr/>    
+            <div class="col-md-4 text-right">
+                <%= image_tag("pr1/pr1.jpg", :class => "projImagebor")%>
+            </div>
+            <div class="col-md-4 text-center">
+                <%= image_tag("pr1/pr2.jpg", :class => "projImagebor")%>
+            </div>    
+            <div class="col-md-4">
+                <%= image_tag("pr1/pr3.jpg", :class => "projImagebor")%>
+            </div>  
+        </div>
+        <div class="row bot-pad">
+            <div class="col-md-3 col-md-offset-3  text-center">
+                <%= image_tag("pr1/pr4.jpg", :class => "projImagebor")%>
+            </div>
+            <div class="col-md-3 text-center">
+                <%= image_tag("pr1/pr5.jpg", :class => "projImagebor")%>
+            </div>    
+        </div>        
+
+        <div class="row bot-pad">
+            <p class="text-center service-font">CONSTRUCTION OF LINED CANAL WITH COVER LOCATED AT SITIO KAPAKULAN,
+                            BRGY. TISA , LABANGON CEBU CITY</p><hr/>
+            
+            <div class="col-md-4 text-right">
+                <%= image_tag("pr2/p2r1.jpg", :class => "projImagebor")%>
+            </div>
+            <div class="col-md-4 text-center">
+                <%= image_tag("pr2/p2r2.jpg", :class => "projImagebor")%>
+            </div>    
+            <div class="col-md-4">
+                <%= image_tag("pr2/p2r3.jpg", :class => "projImagebor")%>
+            </div>  
+        </div>
+        <div class="row bot-pad">
+            <div class="col-md-4 text-right">
+                <%= image_tag("pr2/p2r4.jpg", :class => "projImagebor")%>
+            </div>
+            <div class="col-md-4 text-center">
+                <%= image_tag("pr2/p2r5.jpg", :class => "projImagebor")%>
+            </div>    
+            <div class="col-md-4">
+                <%= image_tag("pr2/p2r6.jpg", :class => "projImagebor")%>
+            </div>    
+        </div>        
+
+        
+        
+    </div>    
+</div>    
 
     
 <!-- SERVICES -->
 <div class="container-fluid scrolling-bg-effect" id="service">
     <div class="text-center services-margin" id="services">
-        <h2 class="service-font" > Services Offered</h2>
+        <h3 class="service-font" > <span class="enclose">Services Offered</h3>
    
        <br />
        <br />
