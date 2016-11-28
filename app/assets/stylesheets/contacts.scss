@@ -11,14 +11,21 @@
 
 .content{padding-top: 20px; font-family: 'Source Sans Pro', sans-serif;}
 
+.sample{background-color: #F1ECEC; height: auto;}
+
 .service-font{font-family: 'Montserrat', sans-serif; }
 
+<<<<<<< HEAD
 .center{text-align: center;}
 
 .bbjis{background-image: image-url('bbjis_head.jpg'); 
         background-size: 100% auto; 
         background-repeat: no-repeat; 
         height: 320px;}
+=======
+
+.bbjis{background-image: image-url('bbjis_head.jpg'); background-size: 100% auto; background-repeat: no-repeat; height: 257px;}
+>>>>>>> layout_finals
 
 .scrolling-bg-effect{background-image: image-url("5.jpg"); 
                     background-attachment: fixed;
@@ -45,6 +52,8 @@
 
 
 //Some indentations
+.bot-pad{padding-bottom: 50px;}
+
 .indent-left {text-indent: 20px;}
 
 .indent-about {text-indent: 50px;}
@@ -55,6 +64,7 @@
 
 .d-bold{font-weight: bold;}
 
+<<<<<<< HEAD
 //responsive
 
 @media screen and (max-width: 420px) {
@@ -67,3 +77,23 @@
         font-family: 'Oswald', sans-serif;}
     
 }
+=======
+.enclose{
+    border: 2px solid black;
+    padding: 2px;
+    color: black;
+    transition: 1s;
+};
+
+.enlose-hover{
+    color: white;
+    background-color: #F1ECEC;
+}
+
+.projImagebor {
+-webkit-box-shadow: 4px 13px 44px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 13px 44px -8px rgba(0,0,0,0.75);
+box-shadow: 4px 13px 44px -8px rgba(0,0,0,0.75);
+}
+
+>>>>>>> layout_finals
