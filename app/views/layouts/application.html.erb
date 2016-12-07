@@ -95,11 +95,13 @@
                }
             });
             
+            // Script for fade heading
+            
             $(window).scroll(function () {
                 var scrollTop = $(window).scrollTop();
                 var height = $(window).height();
                 $('.fade-scroll').css({
-                    'opacity': (((height - scrollTop) / height) - 0.1)
+                    'opacity': (((height - scrollTop) / height) - 0.25)
                 });
             });
         
